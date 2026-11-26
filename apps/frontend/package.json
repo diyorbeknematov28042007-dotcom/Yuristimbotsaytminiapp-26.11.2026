@@ -1,0 +1,9 @@
+{
+  "name": "@yuristim/frontend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "cf dev --mode staging --host",
+    "build": "cf build --mode staging"
+  }
+}
