@@ -1,0 +1,12 @@
+{
+  "name": "@yuristim/bot",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^2.0.0-rc.5"
+  },
+  "scripts": {
+    "dev": "cf dev --mode staging",
+    "build": "cf build --mode staging"
+  }
+}

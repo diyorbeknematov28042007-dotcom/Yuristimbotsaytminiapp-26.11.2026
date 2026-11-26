@@ -1,0 +1,40 @@
+{
+  "name": "yuristim",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:frontend": "npm run dev -w @yuristim/frontend",
+    "build": "npm run build -w @yuristim/frontend && npm run build -w @yuristim/api && npm run build -w @yuristim/bot",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@telegram-apps/sdk": "^3.3.0",
+    "grammy": "^1.38.0",
+    "hono": "^4.11.0",
+    "lucide-react": "^0.554.0",
+    "motion": "^12.23.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^2.0.0-rc.5",
+    "@cloudflare/workers-types": "^4.20251126.0",
+    "@tailwindcss/vite": "^4.1.0",
+    "@types/node": "^26.6.11",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "cf": "^1.0.0-rc.6",
+    "prettier": "^3.10.1",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0",
+    "vitest": "^3.2.0"
+  }
+}
